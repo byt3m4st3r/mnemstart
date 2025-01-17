@@ -25,12 +25,16 @@ func main() {
 
 	initStorage(db)
 
-	sessionStore := auth.NewCookieStore(auth.SessionOptions{
+	sessionStore, err := auth.NewFileStore(auth.SessionOptions{
+		StorePath:  "./sessions", // Add this line - specify where to store session files
 		CookiesKey: config.Envs.CookiesAuthSecret,
 		MaxAge:     config.Envs.CookiesAuthAgeInSeconds,
 		HttpOnly:   config.Envs.CookiesAuthIsHttpOnly,
 		Secure:     config.Envs.CookiesAuthIsSecure,
 	})
+	if err != nil {
+		log.Fatalf("Error creating session store: %v", err)
+	}
 	authService := auth.NewAuthService(sessionStore)
 
 	r := chi.NewRouter()
