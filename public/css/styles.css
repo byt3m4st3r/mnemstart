@@ -1,448 +1,458 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
 input,
 button {
-    font: inherit;
+  font: inherit;
 }
 
 body {
-    font-family: "Noto Sans", sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #fff;
-    background-color: #161a1d;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  background: linear-gradient(
+    180deg,
+    rgba(75, 128, 204, 1) 0%,
+    rgba(151, 75, 204, 1) 100%
+  );
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 kbd {
-    padding: 3px 0;
-    background-color: #555;
-    color: #fff;
-    padding: 0.1rem 0.3rem;
-    border-radius: 0.25rem;
-    font-family: monospace;
-    font-size: 0.9rem;
+  padding: 3px 0;
+  background-color: #555;
+  color: #fff;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
+  font-size: 0.9rem;
 }
 
 td {
-    padding: 3px 0;
+  padding: 3px 0;
 }
 
 .login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .login-container {
-    border: 1px solid #555;
-    border-radius: 0.5rem;
-    padding: 2rem;
-    width: 300px;
+  border: 1px solid #555;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 300px;
 }
 
 .login-container h2 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .login-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0.5rem;
 }
 
 .login-button {
-    display: flex;
-    flex-direction: row;
-    height: 2.5rem;
-    width: 2.5rem;
-    border-radius: 0.25rem;
-    color: #fff;
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.25rem;
+  color: #fff;
 }
 
 .button-logo {
-    font-size: 2rem;
-    padding: 0.25rem;
-    flex: initial;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+  font-size: 2rem;
+  padding: 0.25rem;
+  flex: initial;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-button-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    padding-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding-right: 5px;
 }
 
 .github {
-    background-color: #333;
+  background-color: #333;
 }
 
 .discord {
-    background-color: #7289da;
+  background-color: #7289da;
 }
 
 .google {
-    background-color: #4285f4;
+  background-color: #4285f4;
 }
 
 .gitlab {
-    background-color: #fc6d26;
+  background-color: #fc6d26;
 }
 
 /*main-content is a div containing multiple elements, the div should be centered on the page an elements inside stacked on top of one another.*/
 #main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30vh;
 }
 
 #clock {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 #date {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 #status {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 0.5rem;
-    font-size: 0.75rem;
-    color: #999;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  color: #999;
 }
 
 #search {
-    background-color: transparent;
-    text-align: center;
-    color: #fff;
-    outline: none;
-    border: none;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  text-align: center;
+  color: #fff;
+  outline: none;
+  border: none;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 #suggestions {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 50vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50vw;
 }
 
 #suggestions a {
-    padding: 10px 15px;
-    margin: 10px;
-    color: #fff;
-    text-decoration: none;
-    background-color: #333;
-    transition: all 0.2s ease-in-out;
-    border-radius: 0.25rem;
+  padding: 10px 15px;
+  margin: 10px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #333;
+  transition: all 0.2s ease-in-out;
+  border-radius: 0.25rem;
 }
 
 #search:focus {
-    opacity: 1;
+  opacity: 1;
+}
+
+#search::placeholder {
+  color: #b6b7ff; /* Change to your desired color */
+  font-style: italic; /* Optional: to style the placeholder text */
+  opacity: 1; /* Ensure visibility (default is usually 0.5) */
 }
 
 /*nav styles*/
 nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    width: 38px;
-    height: 36px;
-    overflow: hidden;
-    transition: all 0.2s ease-in-out;
-    border-radius: 0 0 3px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 38px;
+  height: 36px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  border-radius: 0 0 3px 0;
 }
 
 nav a,
 nav ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 nav:hover {
-    width: 38px;
-    height: 250px;
-    transition: all 0.4s ease-in-out;
+  width: 38px;
+  height: 250px;
+  transition: all 0.4s ease-in-out;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0 0 0 0;
-    transition: all 0.2s ease-in-out;
+  list-style-type: none;
+  margin: 0 0 0 0;
+  transition: all 0.2s ease-in-out;
 }
 
 nav ul li {
-    transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .navicon {
-    padding: 12px 0;
-    width: 40px;
+  padding: 12px 0;
+  width: 40px;
 }
 
 .navicon:before {
-    padding: 12px;
+  padding: 12px;
 }
 
 nav .bx:before {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .caret-rotate {
-    transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 nav:hover .caret-rotate {
-    transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .settings-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .setting {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .tooltip-container {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .tooltip-text {
-    visibility: hidden;
-    width: 250px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 10px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    font-size: 0.75rem;
+  visibility: hidden;
+  width: 250px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.75rem;
 }
 
 .tooltip-container:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 /*modal styles*/
 #modal {
-    /* Underlay covers entire screen. */
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+  /* Underlay covers entire screen. */
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 
-    /* Flexbox centers the .modal-content vertically and horizontally */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* Flexbox centers the .modal-content vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    /* Animate when opening */
-    animation-name: fadeIn;
-    animation-duration: 150ms;
-    animation-timing-function: ease;
+  /* Animate when opening */
+  animation-name: fadeIn;
+  animation-duration: 150ms;
+  animation-timing-function: ease;
 }
 
 #modal > .modal-underlay {
-    /* underlay takes up the entire viewport. This is only
+  /* underlay takes up the entire viewport. This is only
 	required if you want to click to dismiss the popup */
-    position: absolute;
-    z-index: -1;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 #modal > .modal-content {
-    /* Position visible dialog near the top of the window */
-    margin-top: 10vh;
+  /* Position visible dialog near the top of the window */
+  margin-top: 10vh;
 
-    /* Sizing for visible dialog */
-    width: 80%;
-    max-width: 600px;
+  /* Sizing for visible dialog */
+  width: 80%;
+  max-width: 600px;
 
-    /* Display properties for visible dialog*/
-    border-radius: 8px;
-    box-shadow: 0px 0px 20px 0px rgba(33, 33, 33, 0.5);
-    background-color: #323130;
-    padding: 20px;
+  /* Display properties for visible dialog*/
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 0px rgba(33, 33, 33, 0.5);
+  background-color: #323130;
+  padding: 20px;
 
-    /* Animate when opening */
-    animation-name: zoomIn;
-    animation-duration: 150ms;
-    animation-timing-function: ease;
+  /* Animate when opening */
+  animation-name: zoomIn;
+  animation-duration: 150ms;
+  animation-timing-function: ease;
 }
 
 #modal.closing {
-    /* Animate when closing */
-    animation-name: fadeOut;
-    animation-duration: 150ms;
-    animation-timing-function: ease;
+  /* Animate when closing */
+  animation-name: fadeOut;
+  animation-duration: 150ms;
+  animation-timing-function: ease;
 }
 
 #modal.closing > .modal-content {
-    /* Animate when closing */
-    animation-name: zoomOut;
-    animation-duration: 150ms;
-    animation-timing-function: ease;
+  /* Animate when closing */
+  animation-name: zoomOut;
+  animation-duration: 150ms;
+  animation-timing-function: ease;
 }
 
 .modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .modal-header h2 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .modal-close {
-    font-size: 1.5rem;
-    cursor: pointer;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 #modal table {
-    width: 100%;
-    table-layout: auto;
-    margin-bottom: 20px;
-    border-collapse: collapse;
+  width: 100%;
+  table-layout: auto;
+  margin-bottom: 20px;
+  border-collapse: collapse;
 }
 
 #modal table th {
-    text-align: left;
-    border-bottom: 1px solid #555;
+  text-align: left;
+  border-bottom: 1px solid #555;
 }
 
 #modal table td {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
 }
 
 #modal button {
-    padding: 5px 10px;
-    background-color: #555;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 5px 10px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #modal input {
-    padding: 5px;
-    width: 100%;
-    border-radius: 5px;
-    background-color: #444;
-    outline: none;
-    border: none;
-    color: #fff;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #444;
+  outline: none;
+  border: none;
+  color: #fff;
 }
 
 #modal select {
-    padding: 8px !important;
-    font-size: inherit;
-    width: 100%;
-    border-radius: 5px;
-    background-color: #444;
-    outline: none;
-    border: none;
-    color: #fff;
+  padding: 8px !important;
+  font-size: inherit;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #444;
+  outline: none;
+  border: none;
+  color: #fff;
 }
 
 .table-actions {
-    white-space: nowrap;
-    padding: 3px 0;
-    display: flex;
-    justify-content: right;
+  white-space: nowrap;
+  padding: 3px 0;
+  display: flex;
+  justify-content: right;
 }
 
 .table-actions button {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .add-button {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #modal .action-buttons {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes zoomIn {
-    0% {
-        transform: scale(0.9);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes zoomOut {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0.9);
-    }
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
 }
