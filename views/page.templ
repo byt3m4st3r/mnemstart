@@ -22,10 +22,10 @@ templ Page(nav bool, user goth.User) {
 				<nav>
 					<span class="bx bx-caret-left navicon caret-rotate"></span>
 					<ul>
-						<a href="#" hx-get="/mappings" hx-target="body" hx-swap="beforeend" hx-trigger="click, keyup[altKey&&key=='m'] from:body">
+						<a href="#" hx-get="/mappings" hx-target="body" hx-swap="beforeend" hx-trigger="click, keyup[shiftKey&&ctrlKey&&key=='M'] from:body">
 							<li class="bx bx-map-alt navicon"></li>
 						</a>
-						<a href="#" hx-get="/settings" hx-target="body" hx-swap="beforeend" hx-trigger="click, keyup[altKey&&key=='s'] from:body">
+						<a href="#" hx-get="/settings" hx-target="body" hx-swap="beforeend" hx-trigger="click, keyup[shiftKey&&ctrlKey&&key=='S'] from:body">
 							<li class="bx bx-cog navicon"></li>
 						</a>
 						<a href="https://github.com/scottmckendry/mnemstart/">
@@ -65,11 +65,11 @@ templ Help() {
 				<td>Focus the search input</td>
 			</tr>
 			<tr>
-				<td><kbd>alt</kbd> + <kbd>s</kbd></td>
+				<td><kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>s</kbd></td>
 				<td>Open settings</td>
 			</tr>
 			<tr>
-				<td><kbd>alt</kbd> + <kbd>m</kbd></td>
+				<td><kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>m</kbd></td>
 				<td>Open mappings</td>
 			</tr>
 		</table>
